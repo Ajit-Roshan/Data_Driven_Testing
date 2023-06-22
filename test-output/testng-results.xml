@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[10 ]]>
+    </line>
+    <line>
+      <![CDATA[admin1 pass1]]>
+    </line>
+    <line>
+      <![CDATA[admin2 pass2]]>
+    </line>
+    <line>
+      <![CDATA[admin3 pass3]]>
+    </line>
+    <line>
+      <![CDATA[admin4 pass4]]>
+    </line>
+    <line>
+      <![CDATA[admin5 pass5]]>
+    </line>
+    <line>
+      <![CDATA[admin6 pass6]]>
+    </line>
+    <line>
+      <![CDATA[admin7 pass7]]>
+    </line>
+    <line>
+      <![CDATA[admin8 pass8]]>
+    </line>
+    <line>
+      <![CDATA[admin9 pass9]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-06-22T17:55:25 IST" name="Default suite" finished-at="2023-06-22T17:55:27 IST" duration-ms="1990">
+    <groups>
+    </groups>
+    <test started-at="2023-06-22T17:55:25 IST" name="Default test" finished-at="2023-06-22T17:55:27 IST" duration-ms="1990">
+      <class name="driver.TestDriver">
+        <test-method signature="test()[pri:1, instance:driver.TestDriver@16a0ee18]" started-at="2023-06-22T17:55:25 IST" name="test" finished-at="2023-06-22T17:55:27 IST" duration-ms="1257" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[10 ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="getData()[pri:2, instance:driver.TestDriver@16a0ee18]" started-at="2023-06-22T17:55:27 IST" name="getData" finished-at="2023-06-22T17:55:27 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[admin1 pass1]]>
+            </line>
+            <line>
+              <![CDATA[admin2 pass2]]>
+            </line>
+            <line>
+              <![CDATA[admin3 pass3]]>
+            </line>
+            <line>
+              <![CDATA[admin4 pass4]]>
+            </line>
+            <line>
+              <![CDATA[admin5 pass5]]>
+            </line>
+            <line>
+              <![CDATA[admin6 pass6]]>
+            </line>
+            <line>
+              <![CDATA[admin7 pass7]]>
+            </line>
+            <line>
+              <![CDATA[admin8 pass8]]>
+            </line>
+            <line>
+              <![CDATA[admin9 pass9]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getData -->
+      </class> <!-- driver.TestDriver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
