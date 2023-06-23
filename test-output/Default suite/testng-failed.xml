@@ -5,7 +5,10 @@
     <classes>
       <class name="driver.TestDriver">
         <methods>
+          <include name="setUp"/>
           <include name="getData"/>
+          <include name="tearDown"/>
+          <include name="test"/>
         </methods>
       </class> <!-- driver.TestDriver -->
     </classes>

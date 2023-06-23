@@ -1,11 +1,17 @@
 package driver;
 
+import static org.testng.Assert.assertEquals;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import utils.Utils;
+import common.Common;
 
-public class TestDriver extends Utils{
+public class TestDriver extends Common{
 
 	int rowCount ;
 	TestDriver td;
@@ -22,23 +28,46 @@ public class TestDriver extends Utils{
 	@Test(priority = 2)
 	public void	getData() throws Throwable {
 
+		
 		for(int i= 1 ; i< rowCount; i++) {
 			String id= td.getId(i);
 			String pass= td.getPass(i);
+
+			WebElement uName= dr.findElement(By.id("username"));
+			WebElement uPass=  dr.findElement(By.id ("password"));
+			WebElement signIn=  dr.findElement(By.id ("submit"));
+
 			
-			Reporter.log(id +" "+pass ,true);
+			uName.clear();
+			uPass.clear();
+
+
+			uName.sendKeys(id);
+			uPass.sendKeys(pass);
+			signIn.click();
 			
-			if(id.contains( "admin4") && pass.contains( "pass4") ) {
+			dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+
+			String currURL= dr.getCurrentUrl();
+			currURL= currURL.toLowerCase();
+
+			//			assertEquals( "successfully" , currURL.contains("successfully") );
+
+			//			Reporter.log(id +" "+pass ,true);
+			//			
+			if(currURL.contains("successfully")) {
 				td.setData(i, "pass");
+				dr.findElement(By.xpath("//a[@href='https://practicetestautomation.com/practice-test-login/']")).click();
+
+				dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
 			}
-			else if(id.contains( "admin7") && pass.contains( "pass7") ) {
-				td.setData(i, "blocked");
+			else {
+				td.setData(i, "fail");		
 			}
-			else 
-				td.setData(i, "fail");			
+
 		}	
 	}
-	
+
 }
 
 
