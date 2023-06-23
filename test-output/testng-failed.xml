@@ -11,6 +11,11 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- driver.TestDriver -->
+      <class name="common.Common">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- common.Common -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

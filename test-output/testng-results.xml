@@ -2,28 +2,28 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[10 ]]>
+      <![CDATA[12 ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-23T11:23:54 IST" name="Suite" finished-at="2023-06-23T11:24:17 IST" duration-ms="22966">
+  <suite started-at="2023-06-23T18:38:34 IST" name="Suite" finished-at="2023-06-23T18:39:14 IST" duration-ms="39734">
     <groups>
     </groups>
-    <test started-at="2023-06-23T11:23:54 IST" name="Test" finished-at="2023-06-23T11:24:17 IST" duration-ms="22966">
+    <test started-at="2023-06-23T18:38:34 IST" name="Test" finished-at="2023-06-23T18:39:14 IST" duration-ms="39734">
       <class name="driver.TestDriver">
-        <test-method signature="test()[pri:1, instance:driver.TestDriver@76a4ebf2]" started-at="2023-06-23T11:24:07 IST" name="test" finished-at="2023-06-23T11:24:08 IST" duration-ms="1152" status="PASS">
+        <test-method signature="test()[pri:1, instance:driver.TestDriver@7ef82753]" started-at="2023-06-23T18:39:01 IST" name="test" finished-at="2023-06-23T18:39:03 IST" duration-ms="1185" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[10 ]]>
+              <![CDATA[12 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="getData()[pri:2, instance:driver.TestDriver@76a4ebf2]" started-at="2023-06-23T11:24:08 IST" name="getData" finished-at="2023-06-23T11:24:16 IST" duration-ms="8114" status="PASS">
+        <test-method signature="getData()[pri:2, instance:driver.TestDriver@7ef82753]" started-at="2023-06-23T18:39:03 IST" name="getData" finished-at="2023-06-23T18:39:13 IST" duration-ms="10038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
       </class> <!-- driver.TestDriver -->
       <class name="common.Common">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:common.Common@1a942c18]" started-at="2023-06-23T11:23:55 IST" name="setUp" finished-at="2023-06-23T11:24:07 IST" duration-ms="12336" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:common.Common@53fe15ff]" started-at="2023-06-23T18:38:34 IST" name="setUp" finished-at="2023-06-23T18:39:01 IST" duration-ms="27317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:common.Common@1a942c18]" started-at="2023-06-23T11:24:16 IST" name="tearDown" finished-at="2023-06-23T11:24:17 IST" duration-ms="1266" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:common.Common@53fe15ff]" started-at="2023-06-23T18:39:13 IST" name="tearDown" finished-at="2023-06-23T18:39:14 IST" duration-ms="1116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
